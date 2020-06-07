@@ -1,0 +1,128 @@
+Trainer(t1):
+  firstname: Gym
+  lastname: Trainer
+  email: example@gmail.com
+  password: password
+
+Trainer(t2):
+  firstname: Marge
+  lastname: Simpson
+  email: marge@simpson.com
+  password: secret
+
+Trainer(t3):
+  firstname: Lisa
+  lastname: Simpson
+  email: lisa@simpson.com
+  password: secret
+
+Measurements(a1):
+  weight: 76.9
+  chest: 99.06
+  thigh: 50
+  upperArm: 25
+  waist: 81.28
+  hips: 84
+
+Measurements(a2):
+  weight: 74
+  chest: 98
+  thigh: 48
+  upperArm: 26
+  waist: 80
+  hips: 83
+
+Measurements(a3):
+  weight: 70.5
+  chest: 98
+  thigh: 47
+  upperArm: 27
+  waist: 79
+  hips: 82
+
+Measurements(a4):
+  weight: 97
+  chest: 101
+  thigh: 60
+  upperArm: 25
+  waist: 87
+  hips: 88
+
+Measurements(a5):
+  weight: 95
+  chest: 100
+  thigh: 59
+  upperArm: 25
+  waist: 86.5
+  hips: 88
+
+Measurements(a6):
+  weight: 96
+  chest: 100
+  thigh: 59
+  upperArm: 25
+  waist: 86.7
+  hips: 88
+
+Measurements(a7):
+  weight: 62
+  chest: 80
+  thigh: 37
+  upperArm: 20
+  waist: 79
+  hips: 80
+
+Measurements(a8):
+  weight: 60
+  chest: 79
+  thigh: 36
+  upperArm: 20
+  waist: 77
+  hips: 79
+
+Member(m1):
+  firstname: James
+  lastname: Duggan
+  email: dugganj780@gmail.com
+  password: password
+  height: 180
+  startingweight: 77
+  measurementsList:
+    - a1
+    - a2
+    - a3
+
+Member(m2):
+  firstname: Homer
+  lastname: Simpson
+  email: homer@simpson.com
+  password: secret
+  height: 170
+  startingweight: 100
+  measurementsList:
+    - a4
+    - a5
+    - a6
+
+Member(m3):
+  firstname: Bart
+  lastname: Simpson
+  email: bart@simpson.com
+  password: secret
+  height: 150
+  startingweight: 63
+  measurementsList:
+    - a7
+    - a8
+
+Member(m4):
+  firstname: Maggie
+  lastname: Simpson
+  email: maggie@simpson.com
+  password: secret
+  height: 140
+  startingweight: 50
+  measurementsList:
+
+
+

@@ -1,0 +1,42 @@
+#{extends 'main.html' /}
+#{set title:'Trainer Member View' /}
+
+#{trainermenu id:"trainermemberview"/}
+
+<div class = "ui segments">
+    <div class="ui four column middle aligned grid raised segment">
+        <div class="column">
+            <header class="ui center aligned icon header">
+                <i class = "user icon"></i>
+                ${member.firstname} ${member.lastname}
+            </header>
+        </div>
+        <div class="column">
+            <header class="ui center aligned icon header">
+                #{if (member.isIdealBodyWeight())==true}
+                <i class = "green tachometer alternate icon"></i>
+                #{/if}
+                #{else}
+                <i class = "red tachometer alternate icon"></i>
+                #{/else}
+                IDEAL WEIGHT INDICATOR
+            </header>
+        </div>
+        <div class="column">
+            <div class="ui huge left aligned header">
+                <i class = "big heartbeat icon"></i>
+                <div class = "content">
+                    ${member.calculateBMI()}
+                    <div class="ui black sub header">BMI</div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <header class="ui center aligned icon header">
+                <i class = "doctor icon"></i>
+                ${member.categoryBMI()}
+            </header>
+        </div>
+    </div>
+    #{listmeasurements member:member /}
+</div>

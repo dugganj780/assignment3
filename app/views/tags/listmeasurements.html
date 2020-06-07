@@ -1,0 +1,29 @@
+#{list items:_member.measurementsList, as:'measurements'}
+<table class="ui celled table">
+    <thead>
+    <tr>
+        <th>Weight</th>
+        <th>Chest</th>
+        <th>Thigh</th>
+        <th>Upper Arm</th>
+        <th>Waist</th>
+        <th>Hips</th>
+        <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    <tr>
+        <td> ${measurements.weight} </td>
+        <td> ${measurements.chest} </td>
+        <td> ${measurements.thigh} </td>
+        <td> ${measurements.upperArm} </td>
+        <td> ${measurements.waist} </td>
+        <td> ${measurements.hips} </td>
+        <td> ${measurements.comment} </td>
+    </tr>
+
+    </tbody>
+</table>
+#{addcomment measurements:measurements /}
+#{/list}

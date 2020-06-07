@@ -1,0 +1,20 @@
+#{extends 'main.html' /}
+#{set title:'TrainerDashboard' /}
+
+#{trainermenu id:"trainerdashboard"/}
+
+#{list items:members, as:'member'}
+<section class="ui segment">
+    <h2 class="ui header">
+        #{if member.measurementsList.size()!=0}
+            <a href="/trainermemberview/${member.id}">${member.firstname} ${member.lastname}</a>
+        #{/if}
+        #{else}
+            ${member.firstname} ${member.lastname}
+        #{/else}
+    </h2>
+    <p>${member.numberOfAssessments()} assessments</p>
+
+</section>
+#{/list}
+

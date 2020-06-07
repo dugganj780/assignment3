@@ -1,0 +1,18 @@
+<nav class="ui menu">
+  <header class="ui header item"> <a href="#"> Play Gym </a></header>
+  <div class="right menu">
+    #{if ((member != null) && (member.checkPassword(password) == true))}
+    <a id="dashboard" class="item" href="/dashboard"> Dashboard  </a>
+    #{/if}
+    #{if ((trainer != null) && (trainer.checkPassword(password) == true))}
+    <a id="trainerdashboard" class="item" href="/trainerdashboard"> Dashboard  </a>
+    #{/if}
+    <a id="about" class="item" href="/about"> About </a>
+    <a id="logout" class="item" href="/logout"> Logout </a>
+    <a id="accountsettings" class="item" href="/accountsettings"><i class="small user icon"></i></a>
+  </div>
+</nav>
+
+<script>
+  $("#${_id}").addClass("active item");
+</script>
